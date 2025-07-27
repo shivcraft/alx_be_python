@@ -2,7 +2,7 @@
 
 # 1. Define global conversion factors exactly once at the module level
 CELSIUS_TO_FAHRENHEIT_FACTOR\s*=\s*9\/5
-
+FAHRENHEIT_TO_CELSIUS_FACTOR\s*=\s*5\s*\/\s*9 / 
 def convert_to_celsius(fahrenheit):
     # 2. Reference the global FAHRENHEIT_TO_CELSIUS_FACTOR
     return (fahrenheit - 32) * FAHRENHEIT_TO_CELSIUS_FACTOR
