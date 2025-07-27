@@ -1,8 +1,7 @@
 # temp_conversion_tool.py
 
 # 1. Define global conversion factors exactly once at the module level
-#CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
-#FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
+CELSIUS_TO_FAHRENHEIT_FACTOR\s*=\s*9\/5
 
 def convert_to_celsius(fahrenheit):
     # 2. Reference the global FAHRENHEIT_TO_CELSIUS_FACTOR
