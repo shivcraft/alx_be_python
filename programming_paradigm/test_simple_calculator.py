@@ -29,12 +29,13 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.multiply(-2, -2), 4)
 
     def test_divide(self):
-        """Test the divide method, including division by zero."""
+        """Test the divide method."""
         self.assertEqual(self.calc.divide(10, 2), 5)
         self.assertEqual(self.calc.divide(9, 3), 3)
-        self.assertEqual(self.calc.divide(5, 2), 2.5)
+        self.assertAlmostEqual(self.calc.divide(5, 2), 2.5)
         self.assertEqual(self.calc.divide(0, 5), 0)
-        self.assertIsNone(self.calc.divide(5, 0))  # Division by zero should return None
+        self.assertIsNone(self.calc.divide(5, 0))  # Division by zero returns None
 
 if __name__ == "__main__":
     unittest.main()
+
